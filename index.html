@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rithik's Folio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon3.png" type="image/x-icon">
+</head>
+<body>
+    <!-- There is a gap property in flexbox where we can seperate list items. -->
+    <!-- The one after navbar is basically called the hero section -->
+    <!-- The section after navbar is always specified using main tag. -->
+    <!-- There should be only one h1 tag in yur website(mainly in hero section in the title) -->
+    <!-- You can use pexels for better images, videos etc -->
+    <!-- For smooth scrolling in a page u need to use the id attribute -->
+    <!-- You can visit https://ionic.io/ionicons for icons. -->
+    <!-- You can generate a fancy border by going to fancy border genertor. -->
+    <!-- If you want that u have specified a phone number and u want that when someone clicks on that h/she should be able to make a call then u need to give the country's tel id like this => <a href="tel:+918847606758">+91 8847606758</a>  -->
+    <!-- If u want to display a parallax efect on your site then just add one property background-attachmen: fixed; to your container. -->
+    <!-- If u want to embed a map in your webpage u need to open maps.google.com and search for your address and then click on share and then embed your map into yur webpage simlar is for the youtube video. -->
+    <!-- You can edit your map by changing the width and height in your iframe tag. -->
+    <!-- Visit formspree.io. It is very useful. -->
+    <!-- There's no need to see the breakpoints for responsivenss u just need to see where your website is breaking -->
+ <header id ="headerId" class="header">
+  <h1 class="sh">Rithik's Folio</h1>
+  <nav class="navbar">
+   <ul class="navbar-list">
+       <li><a class="navbar-link home-link" href="#hero">Home</a></li>
+       <li><a class="navbar-link about-link" href="#bio">About</a></li>
+       <li><a class="navbar-link service-link" href="#services">Services</a></li>
+       <li><a class="navbar-link portfolio-link" href="#resume">Resume</a></li>
+       <li><a class="navbar-link contact-link" href="#contact">Contact</a></li>
+   </ul> 
+  </nav>
+
+  <div class="mobile-navbar-btn">
+    <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+    <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
+  </div>
+ </header>   
+
+ <!-- //////////////////////// Our main hero section ////////////////////// -->
+
+ <main>
+  <section class="section-hero section" id="hero">
+   <div class="container grid grid-two-column"> 
+     <div class="section-hero-data">
+      <p class="hero-top-data">This is me</p>   
+      <h1 class="hero-heading">Rithik Guleria</h1>
+      <p class="hero-para">
+      I'm Rithik Guleria. A passionate Frontend Developer 
+      </p>
+      <div>
+          <a href="#contact" class="btn hireme-btn">Hire Me</a>
+      </div>
+     </div>  
+     <!-- Hero section right side -->
+     <div class="section-hero-img">
+    <img src="images/rithik.jpg" alt="This is me Rithik Guleria" class="hero-img">
+     </div>
+   </div>
+  </section>
+ </main>
+
+ <!-- /////////////////////// Our Bio Data Section Start //////////////////////// -->
+ <section class="section-bio section" id="bio">
+    <div class="container grid grid-two-column"> 
+    <div class="bio-image">
+     <img src="images/biodata.jpg" alt="My BioData Image">
+    </div>
+    <!-- Bio right side data -->
+    <div class="bio-data">
+     <h2 class="common-heading">My Bio-Data</h2>
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi quod eum nobis assumenda tempore iste ducimus exercitationem. Alias, dolor! Earum consequuntur sequi et distinctio veritatis impedit dolor? Repudiandae, ipsam quia!</p>
+     <br>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam assumenda hic autem.</p>
+     <div class="bio-data-stats">
+       <div class="bio-stats">
+        <h3>HTML</h3>
+        <div class="bio-progress-bar bio-progress">
+        <span>90%</span>
+        </div>
+       </div>  
+
+       <div class="bio-stats">
+        <h3>CSS</h3>
+        <div class="bio-progress-bar bio-progress-2">
+        <span>90%</span>
+        </div>
+       </div>  
+
+       <div class="bio-stats">
+        <h3>Javascript</h3>
+        <div class="bio-progress-bar bio-progress-3">
+        <span>75%</span>
+        </div>
+       </div>  
+
+       <div class="bio-stats">
+        <h3>Bootstrap</h3>
+        <div class="bio-progress-bar bio-progress-4">
+        <span>90%</span>
+        </div>
+       </div> 
+       
+       <div class="bio-stats">
+        <h3>JQuery</h3>
+        <div class="bio-progress-bar bio-progress-5">
+        <span>85%</span>
+        </div>
+       </div>  
+    </div>
+    
+      <div class="bio-data-btn">
+        <a href="Resume.pdf" class="btn" download>Download CV</a>
+    
+     </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- /////// PortFolio Section Start /////////// -->
+    <section class="section section-portfolio" id="portfolio-section">
+      <div class="container">
+        <h2 class="common-heading">My Projects</h2>
+        <p class="im"> This section basically includes my projects which i have made.
+        </p>
+      </div>
+
+      <!-- Now we need a parent container where i can keep all my buttons -->
+    
+
+       <div class="container grid grid-three-column portfolio-images ">
+       <div class="img-overlay">
+         <img src="images/folio/1.jpg" alt="my work">
+         <div class="overlay">
+           <a href=" https://rithik01.github.io/RithikGuleria/" target="_blank" class="common-heading">
+             My Portfolio Website
+           </a>
+         </div>
+       </div>
+
+       <div class="img-overlay">
+        <img src="images/folio/4.jpg" alt="my work">
+        <div class="overlay">
+          <a href="https://rithik01.github.io/GuessMyNumber/" target="_blank" class="common-heading">
+            Guess My Number Game
+          </a>
+        </div>
+      </div>
+
+      <div class="img-overlay">
+        <img src="images/folio/3.jpg" alt="my work">
+        <div class="overlay">
+          <a href="https://rithik01.github.io/CharacterCountApp/" target="_blank" class="common-heading">
+            Character App
+          </a>
+        </div>
+      </div>
+       </div>
+    </section>
+
+    <!-- Resume Section  -->
+
+    <section class="section-resume section" id="resume" >
+      <div class="container grid grid-two-column">
+        <!-- resume left side  -->
+        <div class="resume-img">
+          <img src="images/lazy1.jpg" alt="my resume pic" 
+            loading="lazy"
+            class="lazy-img"
+            data-src="images/biodata.jpg"
+          />
+        </div>
+
+        <!-- resume right side  -->
+        <div class="resume-data">
+          <h2 class="common-heading">Resume</h2>
+          <p class="resume-para">About Myself</p>
+
+          <div class="resume-data-subsection">
+            <div class="resume-data-left">
+              <h3>Class X</h3>
+              <div class="grid grid-two-column">
+                <p>
+                  <ion-icon name="business-outline"></ion-icon> St Joseph's School
+                </p>
+                <p>
+                  <ion-icon name="location-outline"></ion-icon> Chandigarh, India
+                </p>
+              </div>
+            </div>
+
+            <div class="resume-data-right">
+              <p class="resume-data-button">Interval</p>
+              <p>
+                <ion-icon name="calendar-outline"></ion-icon>  <span>April 2016 - April,   2017 </span
+                > 
+              </p>
+            </div>
+          </div>
+
+          <!-- 2nd work experience  -->
+          <div class="resume-data-subsection">
+            <div class="resume-data-left">
+              <h3>Class 12th</h3>
+              <div class="grid grid-two-column">
+                <p>
+                  <ion-icon name="business-outline"></ion-icon> Govt Model School
+                </p>
+                <p>
+                  <ion-icon name="location-outline"></ion-icon> Chandigarh, India
+                </p>
+              </div>
+            </div>
+
+            <div class="resume-data-right">
+              <p class="resume-data-button">Interval</p>
+              <p>
+                <ion-icon name="calendar-outline"></ion-icon> July 2018 -
+               May 2019
+              </p>
+        `    </div>
+          </div>
+
+          <div class="resume-data-subsection">
+            <div class="resume-data-left">
+              <h3>Bachelor of Computer Application</h3>
+              <div class="grid grid-two-column">
+                <p>
+                  <ion-icon name="business-outline"></ion-icon> Sd College Chandigarh
+                </p>
+                <p>
+                  <ion-icon name="location-outline"></ion-icon> Chandigarh, India
+                </p>
+              </div>
+            </div>
+
+            <div class="resume-data-right">
+              <p class="resume-data-button">Interval</p>
+              <p>
+                <ion-icon name="calendar-outline"></ion-icon> July 2019 -
+               Present
+              </p>
+            </div>
+          </div>
+
+          
+
+          <!-- 3rd work experience  -->
+         
+         
+       
+          <!-- Education section  -->
+        
+         
+           
+        
+
+            
+
+            <!-- </div>
+             end  -->
+          <!-- </div>
+        </div>
+      </div> --> 
+      
+    </section>
+
+   
+      
+
+
+    <!-- ////////////////////////// Our Work Counter Section /////////////////////////////// -->
+    <section class="section section-work-data" id="work">
+      <div class="container grid grid-four-column">
+        <div>
+          <!-- <h2 class="counter-numbers" data-number="15">0+</h2> -->
+          <h2 class="counter-numbers">15</h2>
+          <p>Projects Completed</p>
+        </div>
+        <div>
+          <!-- <h2 class="counter-numbers" data-number="10">0+</h2> -->
+          <h2 class="counter-numbers">10</h2>
+          <p>Happy Clients</p>
+        </div>
+        <div>
+          <!-- <h2 class="counter-numbers" data-number="30">0+</h2> -->
+          <h2 class="counter-numbers">30</h2>
+          <p>Cup of Coffees</p>
+        </div>
+        <div>
+          <!-- <h2 class="counter-numbers" data-number="40">0+</h2> -->
+          <h2 class="counter-numbers">40</h2>
+          <p>Real Professionals</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- /////////////////////////// Our Services Section Start ////////////////////////////////// -->
+    <section class="section section-services" id="services">
+      <div class="container">
+        <h2 class="common-heading">Service Offered</h2> <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, voluptatum. Distinctio facilis repudiandae commodi dicta hic, consequatur vero velit dolorem!</p>
+      </div>
+
+      <!-- Services offers card -->
+      <div class="container grid grid-three-column">
+        <div class="service-box">
+          <ion-icon name="desktop-sharp" class="service-icon"></ion-icon>
+          <h3>Web Design</h3>
+          <p>"It is not because things are difficult that we do not dare, it is because we do not dare that they are difficult</p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="desktop-sharp" class="service-icon"></ion-icon>
+          <h3>Web Development</h3>
+          <p>"It is not because things are difficult that we do not dare, it is because we do not dare that they are difficult</p>
+        </div>
+
+        <div class="service-box">
+          <ion-icon name="apps-sharp" class="service-icon"></ion-icon>
+          <h3>Mobile Apps</h3>
+          <p>"It is not because things are difficult that we do not dare, it is because we do not dare that they are difficult</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- //////////////////////////////// Freelancing Section ////////////////////////////////////// -->
+
+    <section class="section section-freelancing" id="freelancing">
+      <div class="overlay"></div>
+      <div class="container">
+        <h2>I am <span>available</span> for Freelancing</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium reprehenderit facere molestias placeat.</p>
+        <a href="contact.html" class="btn">Hire Me</a>
+      </div>
+    </section>
+
+    <!-- //////////////////////////// Contact Section ///////////////////////////// -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <h2 class="common-heading">Contact Us</h2>
+      </div>
+      <div class="section-contact-main contact-container">
+      <form method="post" action="https://formspree.io/f/meqndadl">
+          <div class="grid grid-two-column">
+            <div>
+            <label for="name"></label>
+            <input type="text" name="name" id="username" placeholder="Enter Your Name" required>
+          </div>
+
+            <div>
+            <label for="email"></label>
+            <input type="email" name="email" name="replyto" id="email" placeholder="Enter Your Email" autocomplete="off" required>
+          </div>
+
+          </div>
+
+          <div>
+            <label for="tel"></label>
+            <input type="tel" name="tel" id="tel" placeholder="Phone Number" required>
+          </div>
+
+          <div>
+            <label for="message"></label>
+           <textarea name="message" id="message" cols="30" rows="10" required placeholder="How can i help you?"></textarea>
+          </div>
+
+          <div> 
+            <input type="submit" name="submit" id="submit" value="Send" class="btn">
+          </div>
+        </form>
+      </div>
+    </section>
+
+   <!-- ////////////////////////// FOOTER SECTION /////////////////////////// -->
+   <footer class="section-footer section" id="footer">
+     <div class="container grid grid-four-column">
+       <div class="f-about">
+         <h3>About</h3>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia veniam eum, dolo harum expedita, itaque neque soluta blanditiis.
+         </p>
+       </div>
+       <!-- end -->
+       <div class="f-links">
+         <h3>Links</h3>
+         <ul>
+           <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Home</a></li>
+           <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">About</a></li>
+           <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Services</a></li>
+           <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Portfolio</a></li>
+           <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Contact</a></li>
+         </ul>
+        </div>
+        <!-- end -->
+        <div class="f-services">
+          <h3>Services</h3>
+          <ul>
+            <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Web Design</a></li>
+            <li><span><ion-icon name="arrow-forward-outline"></ion-icon><a href="#"></span>Web Development</a></li>
+            <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Web Applications</a></li>
+            <li><span><ion-icon name="arrow-forward-outline"></ion-icon></span><a href="#">Mobile Applications</a></li>
+          </ul>
+        </div>
+        <!-- end -->
+        <div class="f-address">
+          <h3>Any Questions?</h3>
+          <address>
+            <div>
+              <p><span><ion-icon name="location-outline"></ion-icon></span>
+                <a href="#">Chandigarh, India</a> 
+              </p>
+            </div>
+
+            <div>
+              <p><span><ion-icon name="call-outline"></ion-icon></span>
+               <a href="tel:+918847606758">+91 8847606758</a> 
+              </p>
+            </div>
+
+            <div>
+              <p><span><ion-icon name="mail-outline"></ion-icon></span>
+               <a href="mailto:rithikguleria3161@gmail.com">rithikguleria3161@gmail.com</a> 
+              </p>
+            </div>
+          </address>
+        </div>
+
+     </div>
+
+     <div class="container">
+       <div class="f-social-icons">
+         <a href="https://www.instagram.com/rithikguleria" target="_blank">
+          <ion-icon name="logo-instagram" class="icons"></ion-icon>
+         </a>
+         <a href="https://twitter.com/RithikGuleria18?t=V9sGHPVMSi4L7ZPa6si9Wg&s=08" target="_blank">
+          <ion-icon name="logo-twitter" class="icons"></ion-icon>
+         </a>
+         <a href="https://www.linkein.com/in/rithik-guleria-243478236" target="_blank">
+          <ion-icon name="logo-linkedin" class="icons"></ion-icon>
+         </a>
+       </div>
+       <div class="credits">
+         <p>Copyright &copy;2022 All rights Reserved | Rithik Guleria💛 </p>
+       </div>
+     </div>
+   </footer>
+
+
+
+   <script>
+  //    $(window).on("scroll", function(){
+  // if($(window).scrollTop()) {
+  //  $('.header').addClass('black');
+  // }
+  // else{
+  //   $(".header").removeClass('black');
+  // }
+  // })
+   </script>
+
+
+
+
+
+
+
+
+
+    <!-- This below is the link for using icons -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/jquery.waypoints.min.js"></script>
+<script src="./js/jquery.counterup.min.js"></script>
+<script src="index.js"></script>
+
+
+
+ 
+ 
+</body>
+</html>
